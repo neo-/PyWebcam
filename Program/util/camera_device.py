@@ -107,7 +107,7 @@ class CameraDevice:
                         self.image_update_flag.set(True)
                         logger.debug('Flag updated')
         except Exception as e:
-            logger.exception('Failed ', e)
+            logger.exception('Failed ')
         logger.info("Releasing camera")
         if self.vid:
             self.vid.release()
